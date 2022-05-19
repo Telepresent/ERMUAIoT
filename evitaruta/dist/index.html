@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Evitar ruta</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" /><link rel='stylesheet' href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css'>
+<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.0.2/mapbox-gl-directions.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="map"></div>
+    <div class="sidebar">
+      <div class="heading">
+        <h1>Ruta</h1>
+      </div>
+      <div id="reports" class="reports"></div>
+    </div>
+
+<div id="menu">
+<input id="satellite-v9" type="radio" name="rtoggle" value="satellite" checked="checked">
+<label for="satellite-v9">satelite</label>
+<input id="streets-v11" type="radio" name="rtoggle" value="streets">
+<label for="streets-v11">callejero</label>
+<input id="outdoors-v11" type="radio" name="rtoggle" value="outdoors">
+<label for="outdoors-v11">exterior</label>
+</div>
+
+<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script>
+<link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css" type="text/css">
+
+<!-- https://docs.mapbox.com/mapbox-gl-js/example/
+//https://docs.mapbox.com/help/tutorials/route-avoidance-with-turf-mapbox-directions/
+https://docs.mapbox.com/help/tutorials/custom-markers-gl-js/
+
+https://developers.google.com/sheets/api/quickstart/nodejs
+
+https://robkendal.co.uk/blog/reading-google-sheets-data-using-javascript-with-google-sheets-reader
+
+-->
+<!-- partial -->
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js'></script>
+<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.0.2/mapbox-gl-directions.js'></script>
+<script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mapbox-polyline/1.1.1/polyline.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
